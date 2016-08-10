@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.leo.bva">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="VBA"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityEquipo"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityAgregarJugador"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activityDatosJugador"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityModifcarJug"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activityEmpezarPartido"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".configurarPartido"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activityFinalPartido" />
+        <activity android:name=".ActivityEstadisticas" />
+        <activity android:name=".ActivityDatosPartido"></activity>
+    </application>
+
+</manifest>

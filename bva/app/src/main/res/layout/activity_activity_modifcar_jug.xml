@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondoconescudoarriba"
+    tools:context="com.example.leo.bva.ActivityModifcarJug">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtVsAZO"
+                android:hint="Nombre"
+                android:layout_alignBaseline="@+id/txtPeso"
+                android:layout_alignBottom="@+id/txtPeso"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/txtEdad"
+                android:hint="Edad"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="445dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/txtMail"
+            android:hint="Mail"
+            android:layout_alignBaseline="@+id/txtEdad"
+            android:layout_alignBottom="@+id/txtEdad"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_width="447dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDireccion"
+            android:hint="Direccion"
+            android:layout_above="@+id/spinner2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_width="444dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/txtAltura"
+            android:hint="Altura"
+            android:layout_alignBaseline="@+id/txtEdad"
+            android:layout_alignBottom="@+id/txtEdad"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_width="444dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/txtPeso"
+            android:hint="Peso"
+            android:layout_alignBaseline="@+id/txtMail"
+            android:layout_alignBottom="@+id/txtMail"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:layout_width="444dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_above="@+id/btnModificar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="550dp"
+        android:layout_height="wrap_content"
+        android:text="Modificar"
+        android:background="@drawable/buttonshape"
+
+        android:id="@+id/btnModificar"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:text="Volver"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_width="270dp"
+        android:layout_height="79dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_x="864dp"
+        android:layout_y="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnModificar"
+        android:layout_toEndOf="@+id/btnModificar" />
+
+</RelativeLayout>

@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.leo.bva.activityEmpezarPartido">
+
+    <AbsoluteLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+
+            android:layout_width="88dp"
+            android:layout_height="67dp"
+            android:text="IN"
+            android:id="@+id/btnMasUno"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="266dp"
+            android:layout_y="108dp"
+            android:textSize="30dp"
+            android:background="@drawable/buttonshape2"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="IN"
+            android:id="@+id/btnMasDos"
+            android:layout_weight="0.00"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="180dp"
+            android:layout_x="266dp"
+            android:layout_y="183dp"
+            android:textSize="30dp"
+            android:background="@drawable/buttonshape2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Puntos: 0"
+            android:id="@+id/txtPts"
+            android:layout_gravity="center_vertical"
+            android:layout_x="298dp"
+            android:layout_y="53dp"
+            android:textSize="50dp" />
+
+        <Button
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:text="Terminar Partido"
+            android:id="@+id/btnTerminar"
+            android:layout_x="275dp"
+            android:layout_y="504dp"
+            android:background="@drawable/buttonshape"/>
+
+        <ListView
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lstJug"
+            android:layout_x="21dp"
+            android:layout_y="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="77dp"
+            android:text="IN"
+            android:id="@+id/btnTriple"
+            android:layout_weight="0.00"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="180dp"
+            android:layout_x="266dp"
+            android:layout_y="257dp"
+            android:textSize="30dp"
+            android:background="@drawable/buttonshape2"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="Out"
+            android:id="@+id/btnOut1"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="428dp"
+            android:layout_y="108dp"
+            android:textSize="30dp"
+            android:background="@drawable/buttonshape1"
+            android:elegantTextHeight="false"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="FT"
+            android:id="@+id/textView2"
+            android:layout_x="377dp"
+            android:layout_y="127dp"
+            android:textSize="35dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="OUT"
+            android:id="@+id/btnOut2"
+            android:layout_weight="0.00"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="180dp"
+            android:layout_x="428dp"
+            android:layout_y="183dp"
+            android:textSize="30dp"
+            android:background="@drawable/buttonshape1"
+            android:elegantTextHeight="false"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="2P"
+            android:id="@+id/textView3"
+            android:layout_x="373dp"
+            android:layout_y="197dp"
+            android:textSize="35dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:text="OUT"
+            android:id="@+id/btnOut3"
+            android:layout_weight="0.00"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="180dp"
+            android:layout_x="428dp"
+            android:layout_y="257dp"
+            android:textSize="30dp"
+            android:background="@drawable/buttonshape1"
+            android:elegantTextHeight="false"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="3P"
+            android:id="@+id/textView4"
+            android:layout_x="377dp"
+            android:layout_y="271dp"
+            android:textSize="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Asistencias: 0"
+            android:id="@+id/txtAsistencias"
+            android:layout_gravity="center_vertical"
+            android:layout_x="557dp"
+            android:layout_y="57dp"
+            android:textSize="50dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="+"
+            android:id="@+id/btnAsistMas"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="593dp"
+            android:layout_y="112dp"
+            android:textSize="30dp"
+            android:background="@drawable/buttonshape2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="-"
+            android:id="@+id/btnAsistMenos"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="729dp"
+            android:layout_y="114dp"
+            android:textSize="40dp"
+            android:background="@drawable/buttonshape1"
+            android:elegantTextHeight="false"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Rebotes: 0"
+            android:id="@+id/txtRebotes"
+            android:layout_gravity="center_vertical"
+            android:layout_x="880dp"
+            android:layout_y="57dp"
+            android:textSize="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="OFF"
+            android:id="@+id/textView7"
+            android:layout_x="974dp"
+            android:layout_y="127dp"
+            android:textSize="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="DEF"
+            android:id="@+id/textView8"
+            android:layout_x="968dp"
+            android:layout_y="207dp"
+            android:textSize="35dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="+"
+            android:id="@+id/btnOffRebMas"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="880dp"
+            android:layout_y="108dp"
+            android:textSize="30dp"
+            android:background="@drawable/buttonshape2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="-"
+            android:id="@+id/btnOffRebMenos"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="1043dp"
+            android:layout_y="108dp"
+            android:textSize="40dp"
+            android:background="@drawable/buttonshape1"
+            android:elegantTextHeight="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="-"
+            android:id="@+id/btnDeffRebMenos"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="1043dp"
+            android:layout_y="198dp"
+            android:textSize="40dp"
+            android:background="@drawable/buttonshape1"
+            android:elegantTextHeight="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="+"
+            android:id="@+id/btnDeffRebMas"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="880dp"
+            android:layout_y="198dp"
+            android:textSize="30dp"
+            android:background="@drawable/buttonshape2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="-"
+            android:id="@+id/btnMenosPerdidas"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="730dp"
+            android:layout_y="256dp"
+            android:textSize="40dp"
+            android:background="@drawable/buttonshape1"
+            android:elegantTextHeight="false"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Perdidas: 0"
+            android:id="@+id/txtPerdidas"
+            android:layout_gravity="center_vertical"
+            android:layout_x="555dp"
+            android:layout_y="191dp"
+            android:textSize="50dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="+"
+            android:id="@+id/btnMasPerdidas"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="593dp"
+            android:layout_y="260dp"
+            android:textSize="30dp"
+            android:background="@drawable/buttonshape2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="+"
+            android:id="@+id/btnFaltasMas"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="294dp"
+            android:layout_y="411dp"
+            android:textSize="30dp"
+            android:background="@drawable/buttonshape2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="-"
+            android:id="@+id/btnFaltasMenos"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="401dp"
+            android:layout_y="411dp"
+            android:textSize="40dp"
+            android:background="@drawable/buttonshape1"
+            android:elegantTextHeight="false"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Faltas: 0"
+            android:id="@+id/txtFaltas"
+            android:layout_gravity="center_vertical"
+            android:layout_x="298dp"
+            android:layout_y="350dp"
+            android:textSize="50dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="-"
+            android:id="@+id/btnRobosMenos"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="723dp"
+            android:layout_y="412dp"
+            android:textSize="40dp"
+            android:background="@drawable/buttonshape1"
+            android:elegantTextHeight="false"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Robos: 0"
+            android:id="@+id/txtRobos"
+            android:layout_gravity="center_vertical"
+            android:layout_x="553dp"
+            android:layout_y="346dp"
+            android:textSize="50dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="+"
+            android:id="@+id/btnRobosMas"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="596dp"
+            android:layout_y="411dp"
+            android:textSize="30dp"
+            android:background="@drawable/buttonshape2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="-"
+            android:id="@+id/btnTaponesMenos"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="1038dp"
+            android:layout_y="411dp"
+            android:textSize="40dp"
+            android:background="@drawable/buttonshape1"
+            android:elegantTextHeight="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="+"
+            android:id="@+id/btnTaponesMas"
+            android:layout_marginLeft="218dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMasDos"
+            android:layout_toEndOf="@+id/btnMasDos"
+            android:layout_x="889dp"
+            android:layout_y="411dp"
+            android:textSize="30dp"
+            android:background="@drawable/buttonshape2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tapones: 0"
+            android:id="@+id/txtTapones"
+            android:layout_gravity="center_vertical"
+            android:layout_x="880dp"
+            android:layout_y="350dp"
+            android:textSize="50dp" />
+
+        <Button
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:text="Cancelar Partido"
+            android:id="@+id/btnCancelarPartido"
+            android:layout_x="685dp"
+            android:layout_y="507dp"
+            android:background="@drawable/buttonshape"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="VS"
+            android:id="@+id/txtVS"
+            android:layout_gravity="center_vertical"
+            android:layout_x="705dp"
+            android:layout_y="-3dp"
+            android:textSize="50dp" />
+
+    </AbsoluteLayout>
+
+</RelativeLayout>

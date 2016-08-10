@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.leo.bva.ActivityDatosPartido">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:text="Estadisticas Equipo"
+        android:id="@+id/ckbEquipo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:textSize="30dp"
+        android:layout_x="24dp"
+        android:layout_y="33dp" />
+
+    <ListView
+        android:layout_width="352dp"
+        android:layout_height="504dp"
+        android:id="@+id/listView3"
+        android:layout_x="45dp"
+        android:layout_y="128dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntos:"
+        android:id="@+id/txtPuntos"
+        android:layout_x="467dp"
+        android:layout_y="13dp"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asistencias"
+        android:id="@+id/txtAsitencias"
+        android:layout_x="765dp"
+        android:layout_y="13dp"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RebotesOf"
+        android:id="@+id/txtRebsOff"
+        android:layout_x="467dp"
+        android:layout_y="119dp"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RebotesDef"
+        android:id="@+id/txtRebsDef"
+        android:layout_x="765dp"
+        android:layout_y="119dp"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tapones"
+        android:id="@+id/txtTapones"
+        android:layout_x="467dp"
+        android:layout_y="225dp"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Robos"
+        android:id="@+id/txtRobos"
+        android:layout_x="765dp"
+        android:layout_y="225dp"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faltas"
+        android:id="@+id/txtFaltas"
+        android:layout_x="632dp"
+        android:layout_y="331dp"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%Lib"
+        android:id="@+id/txtPorcTirosLib"
+        android:layout_x="451dp"
+        android:layout_y="460dp"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%Dobles"
+        android:id="@+id/txtPorcDobles"
+        android:layout_x="691dp"
+        android:layout_y="460dp"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%Triples"
+        android:id="@+id/txtPorcTripl"
+        android:layout_x="941dp"
+        android:layout_y="460dp"
+        android:textSize="50dp" />
+</AbsoluteLayout>

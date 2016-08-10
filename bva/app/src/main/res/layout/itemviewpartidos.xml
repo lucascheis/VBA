@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/imageViewResultado"
+        android:src="@drawable/pelota"
+        android:layout_x="92dp"
+        android:layout_y="51dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Fecha"
+        android:id="@+id/txtFechazo"
+        android:layout_x="190dp"
+        android:layout_y="80dp"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:nestedScrollingEnabled="true"
+        android:textStyle="normal|italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="VS"
+        android:id="@+id/txtVsAZO"
+        android:layout_x="187dp"
+        android:layout_y="35dp"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        android:textStyle="normal|bold|italic"/>
+
+</AbsoluteLayout>

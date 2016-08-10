@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondoconescudoarriba"
+    tools:context="com.example.leo.bva.activityDatosJugador">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Nombre :"
+        android:id="@+id/txtVsAZO"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="195dp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posicion: "
+        android:id="@+id/txtFechazo"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:layout_below="@+id/txtVsAZO"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Peso: "
+        android:id="@+id/txtPeso"
+        android:textColor="#000000"
+        android:layout_below="@+id/txtFechazo"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Altura"
+        android:id="@+id/txtAltura"
+        android:textColor="#000000"
+        android:layout_below="@+id/txtPeso"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Mail:"
+        android:id="@+id/txtMail"
+        android:textColor="#000000"
+        android:layout_below="@+id/txtAltura"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad: "
+        android:id="@+id/txtEdad"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/txtMail"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold|italic" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Direccion"
+
+        android:id="@+id/txtDireccion"
+        android:singleLine="false"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/txtEdad"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold|italic" />
+
+    <Button
+        android:id="@+id/btnBorrar"
+
+        android:text="Borrar"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/btnModificar"
+
+        android:text="Modificar"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/btnBorrar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button7"
+        android:text="Volver"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_width="270dp"
+        android:layout_height="79dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_x="864dp"
+        android:layout_y="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

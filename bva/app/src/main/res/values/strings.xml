@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="posiciones_array">
+        <item>Base</item>
+        <item>Escolta</item>
+        <item>Alero</item>
+        <item>Ala-Pivot</item>
+        <item>Pivot</item>
+
+    </string-array>
+</resources>
