@@ -1,5 +1,6 @@
 package com.example.leo.bva;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
@@ -52,7 +53,12 @@ public class ActivityEstadisticas extends AppCompatActivity {
     private AdapterView.OnItemClickListener lstPartidos_Click = new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+            Partidos miPartido = listPartidos.get(i);
+            Intent intent = new Intent(ActivityEstadisticas.this,ActivityDatosPartido.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("id", miPartido.id);
+            intent.putExtras(bundle);
+            startActivity(intent);
         }
     };
 

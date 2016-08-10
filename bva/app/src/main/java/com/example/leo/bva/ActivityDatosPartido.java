@@ -17,8 +17,9 @@ public class ActivityDatosPartido extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity_datos_partido);
         ObtenerReferencias();
+        Bundle datos = this.getIntent().getExtras();
+        String idPartido = datos.getString("id");
 
-        //RECIBIR EL ID DEL PARITIDO QUE TOCO
         // SELECT IDJUG FROM ESTADISTICASXJUGADOR WHERE IDPARTIDO=AL QUE TRAJISTE DEL BUNDLE. GUARDAS EN UN ARRAYLIST DE INT TODOS LOS ID
 
         // FOR QUE RECORRA LEL ARRAYLIST Y ADENTRO DEL FOR UN (SELECT NOMBRE,POSICION FROM JUGADORES WHERE IDJUGADOR=ARRAYLIST(i) Y AGREGAS A UNN ARRAYLIST
